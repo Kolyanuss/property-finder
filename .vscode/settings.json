@@ -1,0 +1,7 @@
+{
+  "rubyLsp.enabledFeatures": {
+    "diagnostics": true,
+    "formatting": true,
+    "documentSymbol": true
+  },
+}
