@@ -4,4 +4,9 @@
     "formatting": true,
     "documentSymbol": true
   },
+  "[ruby]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
+  },
+  "rubyLsp.formatter": "syntax_tree",
 }
