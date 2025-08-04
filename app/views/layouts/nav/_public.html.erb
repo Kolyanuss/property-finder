@@ -15,7 +15,7 @@
             </form>
             <div class="text-end">
                 <% if account_signed_in? %>
-                    <button type="button" class="btn btn-outline-light me-2" onclick="window.location='<%= destroy_account_session_path %>'">Sign out</button>
+                    <%= button_to "Sign out", destroy_account_session_path, method: :delete, class: "btn btn-outline-light me-2" %>
                 <% else %>
                     <button type="button" class="btn btn-outline-light me-2" onclick="window.location='<%= new_account_session_path %>'">Login</button>
                     <button type="button" class="btn btn-warning" onclick="window.location='<%= new_account_registration_path %>'">Sign-up</button>
