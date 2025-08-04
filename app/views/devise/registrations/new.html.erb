@@ -4,7 +4,15 @@
     <h1 class="h3 mb-3 fw-normal">Sign up</h1>
 
     <div class="form-floating">
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control", id:"floatingInput", placeholder:"name@example.com" %>
+      <%= f.text_field :first_name, autofocus: true, autocomplete: "given-name", class:"form-control", id:"floatingInputName", placeholder:"" %>
+      <label for="floatingInputName">First Name</label>
+    </div>
+    <div class="form-floating">
+      <%= f.text_field :last_name, autocomplete: "family-name", class:"form-control", id:"floatingInputLastName", placeholder:"" %>
+      <label for="floatingInputLastName">Last Name</label>
+    </div>
+    <div class="form-floating">
+      <%= f.email_field :email, autocomplete: "email", class:"form-control", id:"floatingInput", placeholder:"" %>
       <label for="floatingInput">Email address</label>
     </div>
     <div class="form-floating">
